@@ -1,0 +1,90 @@
+
+// General Styling:
+.main-container{
+position: fixed;
+padding: 1.5rem;
+width: 100vw;
+height: 100vh;
+    .home-icon{
+        font-size: 2rem;
+    }
+    .about-container{
+      font-size: 3rem;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        .about-card{
+            cursor: pointer;
+            border-radius: 0.25rem;
+            margin: 1rem;
+            padding: 0.1rem;
+            background-color: #3b4040;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &:hover{
+              background-color: #535656;
+            }
+            &:hover~.about-card{
+                opacity: 0.5;
+            } 
+            .about-content{
+                overflow: hidden;
+                text-align: center;
+            }
+        #card-one, #card-three, #card-five{
+          justify-content: left;
+          left: 0;
+        }
+        #card-one, #card-three, #card-five{
+          justify-content: right;
+          right: 0;
+        }
+
+        }
+
+    }
+}
+
+//Phone Screens
+@media screen and (max-width:992px){
+.main-container{
+    left: 8rem;
+    .about-container{
+        .course-card{
+            width: 15rem;
+            height: 25rem;
+
+            .about-title{
+                font-size: 1rem;
+            }
+            .course-content{
+                
+            }
+        }
+    }
+}
+
+}
+
+//Desktop Screens
+@media screen and (min-width:992px){
+.main-container{
+    top: 4rem;
+    .course-card-container{
+        .course-card{
+            width: 20rem;
+            height: 30rem;
+
+            .course-title{
+                font-size: 2rem;
+
+            }
+            .course-content{
+                
+            }
+        }
+    }
+}
+}

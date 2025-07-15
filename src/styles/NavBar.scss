@@ -1,0 +1,122 @@
+:root{
+    font-size: 10px;
+    --text-primary: black;
+    --text-secondary: #323232;
+    --bg-primary: #fffdf2;
+    --bg-secondary: #ffe4c4;
+}
+.navbar{
+    z-index: 1000;
+    top: 0; left: 0;
+    position: fixed;
+    background-color: bisque; 
+    color: var(--text-secondary);
+}
+
+//Phone Screens
+@media screen and (max-width: 992px){
+    .navbar{
+        list-style: none;
+        font-size: 4rem;
+        width: 8rem; // offset 
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        &.open{
+            width: 30rem;
+            .link-text-name {
+                opacity: 1;
+            }
+            #menu-icon{
+                color: aqua;
+            }
+            #logo{
+                color: aqua;
+                transform: rotate(-180deg);
+            }
+            backdrop-filter: blur(1.15rem);
+            -webkit-backdrop-filter: blur(1.15rem);
+        }
+    }
+    .nav-item{
+
+    }
+    .nav-link{
+        &:hover{
+            color: aqua;
+        }
+    }
+    .link-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .link-text-invisible{
+        opacity: 0;
+        display: block;
+        font-size: 2.35rem;
+    }
+    .link-text-name{
+        opacity: 0;
+        font-size: 2.5rem;
+    }
+}
+
+//Desktop Screens
+@media screen and (min-width: 992px){
+    .navbar{
+        list-style: none;
+        font-size: 4rem; //Offset every element in all components by this ammount
+        width: 100vw; height: 8rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        &:hover{
+            height: 16rem;
+            .link-text-name {
+                opacity: 1;
+            }
+            #menu-icon{
+                color: aqua;
+            }
+            #logo{
+                color: aqua;
+                transform: rotate(-90deg);
+            }
+       }
+    }
+    .navbar :hover{
+        backdrop-filter: blur(1.15rem);
+        -webkit-backdrop-filter: blur(1.15rem);
+    }
+    .nav-item{
+        #menu-icon, #logo{
+            
+        }
+    }
+    .nav-link{
+        &:hover{
+            font-size: 5rem;
+            color: aqua;
+        }
+    }
+    .link-text-invisible{
+        opacity: 0;
+        display: block;
+        font-size: 2.35rem;
+    }
+    .link-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .link-text-name{
+        opacity: 0;
+        font-size: 2.5rem;
+    }
+}
