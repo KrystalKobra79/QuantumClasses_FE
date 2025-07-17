@@ -1,7 +1,7 @@
-import NavBar from './NavBar.jsx';
+import NavBar from '../NavBar/NavBar.jsx';
 import { Link } from "react-router-dom";
-import "../styles/NotFoundPage.scss";
-import "../styles/RootStyle.scss";
+import "./NotFoundPage.scss";
+
 const NotFoundPage = () => {
     return (
         <>

@@ -1,21 +1,15 @@
 import { Link } from 'react-router-dom';
-import "../styles/About.scss";
-import "../styles/RootStyle.scss";
+import "./About.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
-import NavBar from './NavBar.jsx';
-
+import NavBar from '../NavBar/NavBar.jsx';
 
 const About_Page = () => {
     return (
         <>
-        <NavBar/>
-        <main className="main-container">
-            
-            <Link to={"/"}>
-                <FontAwesomeIcon className='home-icon' icon={faHome}></FontAwesomeIcon>
-            </Link>
-        <h1>About</h1>
+        <NavBar></NavBar>
+        <main className="main-container" id='about_main'>
+
             <section className='about-container'>
 
                 <div className="about-card" id='card-one'>

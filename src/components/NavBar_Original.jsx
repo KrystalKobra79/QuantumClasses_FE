@@ -17,7 +17,7 @@ const NavBar = () => {
             <li className="nav-item">
               <span className="link-text">
                 <FontAwesomeIcon className='link-icon' id='menu-icon' icon={faBars} onClick={handleMenuToggle}></FontAwesomeIcon>
-              <label htmlFor="link-toggle" className="link-text-invisible">Home</label>
+              <label htmlFor="link-toggle" className="link-text-invisible">Mwnu</label>
               </span>
                     
             </li>

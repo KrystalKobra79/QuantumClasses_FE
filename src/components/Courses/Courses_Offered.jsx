@@ -1,11 +1,9 @@
-import NavBar from './NavBar.jsx';
-import '../styles/Courses_Offered.scss';
-import "../styles/RootStyle.scss";
-
+import './Courses_Offered.scss';
+import NavBar from '../NavBar/NavBar.jsx';
 const Courses_Offered = () => {
     return (
         <>
-        <NavBar/>
+        <NavBar></NavBar>
         <main className='main-container'>
 
             <h1>Courses Offered:</h1>

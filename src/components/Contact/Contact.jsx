@@ -1,9 +1,10 @@
-import NavBar from './NavBar.jsx';
 
-import '../styles/Contact.scss';
-import "../styles/RootStyle.scss";
+import './Contact.scss';
+
 import { useState } from 'react';
 import axios from 'axios';
+import NavBar from '../NavBar/NavBar.jsx';
+
 const Contact = () => {
     const [form, setForm] = useState(
         {
@@ -33,7 +34,7 @@ const Contact = () => {
     };
     return (
         <>
-        <NavBar/>
+        <NavBar></NavBar>
         <main className="main-content">
         <section className="form-card">
             <form className = "contact-form" action={handleFormChange} method="post">
@@ -44,7 +45,7 @@ const Contact = () => {
                 <button type="submit" onClick={handleFormSubmit}>Send Message</button>
             </form>
             <div className='status-cardlet'>
-                <h3>Enquiry Status:{status.length === 0 ? " Not writing..." : status}</h3>
+                <h3>Enquiry Status:{form.name.length === 0 && form.email.length === 0 && form.message.length === 0 ? " Not Writing..." : " Writing..."}</h3>
             </div>
         </section>
         
