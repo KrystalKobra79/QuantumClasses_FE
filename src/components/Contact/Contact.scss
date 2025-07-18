@@ -34,24 +34,24 @@
         border-radius: 1rem;
         height: 50vh;
         width: 95vw;
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
 
-    input, textarea {
-      color: var(--text-primary);
-      margin-bottom: 1rem;
-      padding: 0.75rem;
-      border: 2px solid var(--text-secondary);
-      border-radius: 0.75rem;
-      font-size: 1rem;
+        input, textarea {
+          color: var(--text-primary);
+          margin-bottom: 1rem;
+          padding: 0.75rem;
+          border: 2px solid var(--text-secondary);
+          border-radius: 0.75rem;
+          font-size: 1rem;
 
-      &:hover{
-        border: 2px solid cyan;
-      }
-    }
-    textarea{
-      height:25vh;
-    }
+          &:hover{
+            border: 2px solid cyan;
+          }
+        }
+        textarea{
+          height:25vh;
+        }
 
     button {
       padding: 0.75rem;
