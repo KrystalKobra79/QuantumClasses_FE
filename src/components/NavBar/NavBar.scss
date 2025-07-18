@@ -331,7 +331,8 @@ video {
   position: fixed;
   top: 0; left: 0;
   z-index: 1000;
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
 }
 #webcrumbs .absolute {
   position: absolute;
@@ -617,6 +618,11 @@ video {
   color: rgb(99 27 255 / var(--tw-text-opacity, 1));
 }
 @media (min-width: 640px) {
+  #webcrumbs{
+    z-index: 1000;
+    width: 100%;
+    max-width: 100%;
+  }
   #webcrumbs .sm\:px-6 {
     padding-left: 24px;
     padding-right: 24px;
