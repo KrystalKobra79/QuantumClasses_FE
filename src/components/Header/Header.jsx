@@ -1,12 +1,12 @@
 
 import './Header.scss';
-import '/src/assets/QuantumClasses.jpg'
+import './QuantumClasses.jpg'
 const Header = () => {
     return (
         <>
         <main className='main-content'>
             <section className="card">
-                <img src="/src/assets/QuantumClasses.jpg" alt="Quantum Classes" id='qc_logo'/>
+                <img src="./QuantumClasses.jpg" alt="Quantum Classes" id='qc_logo'/>
             </section>
             
         <section className='card'>
