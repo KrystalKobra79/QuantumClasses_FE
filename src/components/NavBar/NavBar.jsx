@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faBookOpen,faHome, faInfoCircle,faUser } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 import "./NavBar.scss";
-import '/src/assets/QuantumClasses.jpg'
+import './QuantumClasses.jpg'
 
 
 
@@ -18,7 +18,7 @@ const NavBar = () => {
 	          <div className="flex items-center">
 	            <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
 	              <span className="text-white font-bold text-lg">
-									<img src="/src/assets/QuantumClasses.jpg" alt="Quantum Classes" id='qc_logo'/>
+									<img src="./QuantumClasses.jpg" alt="QC" id='qc_logo'/>
 								</span>
 	            </div>
 	            <span className="ml-2 text-xl font-bold text-gray-900">Quantum Classes</span>
