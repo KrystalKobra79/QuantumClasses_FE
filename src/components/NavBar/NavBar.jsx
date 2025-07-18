@@ -17,7 +17,7 @@ const NavBar = () => {
 	        <div className="flex-shrink-0">
 	          <div className="flex items-center">
 	            <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
-	              <span className="text-white font-bold text-lg">
+	              <span className="text-white font-bold items-center text-lg">
 									<img src="./QuantumClasses.jpg" alt="QC" id='qc_logo'/>
 								</span>
 	            </div>
@@ -68,7 +68,7 @@ const NavBar = () => {
 	      <div className="px-4 py-3 border-b border-gray-200">
 	        <div className="flex items-center">
 	          <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
-	            <span className="text-white font-bold text-sm">
+	            <span className="text-white font-bold items-center text-sm">
 								<img src="/src/assets/QuantumClasses.jpg" alt="Quantum Classes" id='qc_logo'/>
 							</span>
 	          </div>

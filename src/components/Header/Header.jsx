@@ -6,7 +6,7 @@ const Header = () => {
         <>
         <main className='main-content'>
             <section className="card">
-                <img src="./QuantumClasses.jpg" alt="Quantum Classes" id='qc_logo'/>
+                <img src="QuantumClasses.jpg" alt="Quantum Classes" id='qc_logo'/>
             </section>
             
         <section className='card'>
