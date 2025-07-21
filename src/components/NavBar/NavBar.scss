@@ -330,7 +330,7 @@ video {
 #navbar_main{
   position: fixed;
   top: 0; left: 0;
-  z-index: 1000;
+  z-index: 10000;
   width: 100%;
   max-width: 100%;
 }
@@ -342,6 +342,11 @@ video {
 }
 #navbar_main .sticky {
   position: sticky;
+}
+// For image logo in navbar
+#navbar_main .qc_logo{
+  //height: 5vh;
+  //width: 10vh;
 }
 #navbar_main .right-0 {
   right: 0;
@@ -617,6 +622,8 @@ video {
   --tw-text-opacity: 1;
   color: rgb(99 27 255 / var(--tw-text-opacity, 1));
 }
+
+
 @media (min-width: 640px) {
   #navbar_main{
     z-index: 1000;
@@ -628,6 +635,8 @@ video {
     padding-right: 24px;
   }
 }
+
+
 @media (min-width: 768px) {
   #navbar_main .md\:ml-6 {
     margin-left: 24px;
@@ -639,6 +648,8 @@ video {
     display: none;
   }
 }
+
+
 @media (min-width: 1024px) {
   #navbar_main .lg\:px-8 {
     padding-left: 32px;

@@ -1,5 +1,7 @@
 
 .main-content{
+    overflow-x: hidden;
+    overflow-y: hidden;
     width: 100vw;
     height: 100vh;
     padding: 2.5rem;
@@ -10,12 +12,22 @@
         margin: 0.5rem; padding: 0.5rem;
         border: 0.25rem solid black;
         border-radius: 0.75rem;
+
+        height: 40vh;
+        width: 40vh;
     }
     #qc_logo{
-        height: 45vh;
-        width: 48vh;
+        height: 35vh;
+        width: 40vh;
     }
-    .description{
+    .card #img-card{
+
+    }
+    .card #desc-card{
         
+    }
+    #address-card{
+        height: 7.5vh;
+        width: 40vh;  
     }
 }

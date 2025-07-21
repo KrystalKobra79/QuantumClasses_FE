@@ -11,7 +11,7 @@ const Contact = () => {
             name:'', email:'', message:''
         }
     );
-    const [status, setStatus] = useState('');
+    const [status, setStatus] = useState(' No Message Sent Till Now ');
 
     const handleFormChange = (e) => {
         setForm({...form, [e.target.name]: e.target.value});
@@ -45,7 +45,9 @@ const Contact = () => {
                 <button type="submit" onClick={handleFormSubmit}>Send Message</button>
             </form>
             <div className='status-cardlet'>
-                <h3>Enquiry Status:{form.name.length === 0 && form.email.length === 0 && form.message.length === 0 ? " Not Writing..." : " Writing..."}</h3>
+                <h3>Enquiry Proceeding Status:{form.name.length === 0 && form.email.length === 0 && form.message.length === 0 ? " Not Writing..." : " Writing..."}</h3>
+                <h3>Enquiry Status:{status}</h3>
+
             </div>
         </section>
         

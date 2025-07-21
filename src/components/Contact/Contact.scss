@@ -13,18 +13,27 @@
   font-size: 10px;
 }
 
+
+
+//Phone Screens
+@media screen and (max-width:992px){
 .main-content{
-  margin: 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  margin: 0;
 
   .form-card{
-      margin-top: 7rem;
+    
+     // margin-top: 7rem;
       color: var(--text-secondary);
-      position: fixed;
+      position: relative;
+      //position: fixed;
       top: 0.01rem;
       left: 0.54rem;
-      padding: 0.5rem;
+      padding: 0.75rem;
       height: 50vh;
       .contact-form {
         border: 2px solid var(--text-secondary);
@@ -46,7 +55,7 @@
           font-size: 1rem;
 
           &:hover{
-            border: 2px solid cyan;
+            border: 0.15rem solid cyan;
           }
         }
         textarea{
@@ -71,7 +80,95 @@
   }
 }
   .info-card{
-    position: fixed;
+    //position: fixed;
+    position: relative;
+    bottom: 0.15rem; right: 0.5rem;
+    //margin-bottom: 0.75rem;
+    padding: 0.75rem;
+
+    height: 30vh; width: 75vw;
+    font-size: 2vh;
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+
+    border-radius: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+}
+
+//Desktop Screens
+@media screen and (min-width:992px){
+.main-content{
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .form-card{
+      //margin-top: 7rem;
+      color: var(--text-secondary);
+      //position: fixed;
+      position: relative;
+      top: 0.01rem;
+      left: 0.5rem;
+      padding: 0.5rem;
+      height: 50vh;
+      .contact-form {
+        border: 2px solid var(--text-secondary);
+        max-width: 90rem;
+        padding: 1rem;
+        background: burlywood;
+        border-radius: 1rem;
+        height: 50vh;
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+
+        input, textarea {
+          color: var(--text-primary);
+          margin-bottom: 1rem;
+          padding: 0.75rem;
+          border: 2px solid var(--text-secondary);
+          border-radius: 0.75rem;
+          font-size: 1rem;
+
+          &:hover{
+            border: 0.5 rem solid cyan;
+          }
+        }
+        textarea{
+          height:25vh;
+        }
+
+    button {
+      padding: 0.75rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+    .status-cardlet{
+      font-style: italic;
+    }
+  }
+}
+  .info-card{
+    //position: fixed;
+    position: relative;
     bottom: 1rem; right: 1.754rem;
     margin-bottom: 0.75rem;
     padding: 1.75rem;
@@ -87,19 +184,5 @@
     justify-content: space-evenly;
     align-items: center;
   }
-}
-
-//Phone Screens
-@media screen and (max-width:992px){
-.main-content{
-  top: 5rem;
-  left: 0.5rem;
-}
-}
-
-//Desktop Screens
-@media screen and (min-width:992px){
-.main-content{
-  top:4rem;
 }
 }

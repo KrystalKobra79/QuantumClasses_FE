@@ -1,22 +1,24 @@
 
+import NavBar from '../NavBar/NavBar';
 import './Header.scss';
 import './QuantumClasses.jpg'
 const Header = () => {
     return (
         <>
         <main className='main-content'>
-            <section className="card">
-                <img src="QuantumClasses.jpg" alt="Quantum Classes" id='qc_logo'/>
+            <NavBar></NavBar>
+            <section className="card" id='img-card'>
+                <img src="/src/assets/QuantumClasses.jpg" alt="Quantum Classes" id='qc_logo'/>
             </section>
             
-        <section className='card'>
+        <section className='card' id='desc-card'>
             <h3 className="description">
             A premium institute offering to help students in their academic journey      
             </h3>
         </section>
         
 
-        <section className='card'>
+        <section className='card' id='address-card'>
             <h2>
                 Find us at:
                 QUANTUM CLASSES

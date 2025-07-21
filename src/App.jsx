@@ -1,5 +1,6 @@
 import './assets/QuantumClasses.jpg'
-import MainApp from './components/MainApp';
+import Header from './components/Header/Header';
+// import MainApp from './components/MainApp';
 import './styles/App.scss';
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
   return (
     <>
     <div className="root">
-    <MainApp/>
+      <Header></Header>
     </div>
     
     </>

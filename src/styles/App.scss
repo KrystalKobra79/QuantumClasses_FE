@@ -1,4 +1,6 @@
 *{
+  //overflow-x: hidden; [Don't do this otherwise 
+  //overflow-y: hidden;   mobile navbar won't work]
   transition: 300ms ease-out;
 }
 :root{

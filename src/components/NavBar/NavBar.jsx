@@ -18,7 +18,7 @@ const NavBar = () => {
 	          <div className="flex items-center">
 	            <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
 	              <span className="text-white font-bold items-center text-lg">
-									<img src="./QuantumClasses.jpg" alt="QC" id='qc_logo'/>
+									<img src="/src/assets/QuantumClasses.jpg" alt="QC" className='qc_logo'/>
 								</span>
 	            </div>
 	            <span className="ml-2 text-xl font-bold text-gray-900">Quantum Classes</span>
@@ -27,26 +27,26 @@ const NavBar = () => {
 	        <div className="hidden md:block">
 	          <div  className="ml-10 flex items-baseline space-x-8">
 
-						<Link to={"/"} className="text-gray-900 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200" id='link-home'>
+						<Link to={"/"} className="text-gray-900 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
             <span className="material-symbols-outlined inline mr-3 text-base">
               <FontAwesomeIcon className='link-icon' icon={faHome} ></FontAwesomeIcon>
                 <label htmlFor="link-home" className="link-text-name">Home</label>
             </span>
 					</Link>
 
-					<Link to={"/courses_offered"} className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200" id='link-home'>
+					<Link to={"/courses_offered"} className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
                 <span className="material-symbols-outlined inline mr-3 text-base">
                   <FontAwesomeIcon className='link-icon' icon={faBookOpen} ></FontAwesomeIcon>
                   <label htmlFor="link-home" className="link-text-name">Courses</label>
                 </span></Link>
 
-					<Link to={"/about_page"} className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200" id='link-home'>
+					<Link to={"/about_page"} className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
             <span className="material-symbols-outlined inline mr-3 text-base">
               <FontAwesomeIcon className='link-icon' icon={faInfoCircle} ></FontAwesomeIcon>
                 <label htmlFor="link-home" className="link-text-name">About</label>
             </span>
 					</Link>
-					<Link to={"/contact"} className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200" id='link-home'>
+					<Link to={"/contact"} className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
             <span className="material-symbols-outlined inline mr-3 text-base">
               <FontAwesomeIcon className='link-icon' icon={faUser} ></FontAwesomeIcon>
                 <label htmlFor="link-home" className="link-text-name">Contact Us</label>
@@ -69,7 +69,7 @@ const NavBar = () => {
 	        <div className="flex items-center">
 	          <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
 	            <span className="text-white font-bold items-center text-sm">
-								<img src="/src/assets/QuantumClasses.jpg" alt="Quantum Classes" id='qc_logo'/>
+								<img src="/src/assets/QuantumClasses.jpg" alt="Quantum Classes" className='qc_logo'/>
 							</span>
 	          </div>
 	          <span className="ml-2 text-sm font-medium text-gray-900">Quantum Classes</span>
@@ -78,26 +78,26 @@ const NavBar = () => {
 
 	      <div className="py-2">
 
-					<Link to={"/"} className="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-100 transition-colors duration-200" id='link-home'>
+					<Link to={"/"} className="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-100 transition-colors duration-200">
             <span className="material-symbols-outlined inline mr-3 text-base">
               <FontAwesomeIcon className='link-icon' icon={faHome} ></FontAwesomeIcon>
                 <label htmlFor="link-home" className="link-text-name">Home</label>
             </span>
 					</Link>
 
-					<Link to={"/courses_offered"} className="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-100 transition-colors duration-200" id='link-home'>
+					<Link to={"/courses_offered"} className="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-100 transition-colors duration-200">
                 <span className="material-symbols-outlined inline mr-3 text-base">
                   <FontAwesomeIcon className='link-icon' icon={faBookOpen} ></FontAwesomeIcon>
                   <label htmlFor="link-home" className="link-text-name">Courses</label>
                 </span></Link>
 
-					<Link to={"/about_page"} className="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-100 transition-colors duration-200" id='link-home'>
+					<Link to={"/about_page"} className="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-100 transition-colors duration-200">
             <span className="material-symbols-outlined inline mr-3 text-base">
               <FontAwesomeIcon className='link-icon' icon={faInfoCircle} ></FontAwesomeIcon>
                 <label htmlFor="link-home" className="link-text-name">About</label>
             </span>
 					</Link>
-					<Link to={"/contact"} className="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-100 transition-colors duration-200" id='link-home'>
+					<Link to={"/contact"} className="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-100 transition-colors duration-200">
             <span className="material-symbols-outlined inline mr-3 text-base">
               <FontAwesomeIcon className='link-icon' icon={faUser} ></FontAwesomeIcon>
                 <label htmlFor="link-home" className="link-text-name">Contact Us</label>
@@ -112,7 +112,6 @@ const NavBar = () => {
 	
 	    </div>
 	  </div>
-	  {/* Next: "Add user profile dropdown with avatar and account options" */}
 	</div> 
         </div>
   )
