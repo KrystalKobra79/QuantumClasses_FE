@@ -5,8 +5,9 @@ import './QuantumClasses.jpg'
 const Header = () => {
     return (
         <>
+        <NavBar></NavBar>
         <main className='main-content'>
-            <NavBar></NavBar>
+            
             <section className="card" id='img-card'>
                 <img src="/src/assets/QuantumClasses.jpg" alt="Quantum Classes" id='qc_logo'/>
             </section>
