@@ -33,9 +33,10 @@ const Contact = () => {
         }
     };
     return (
-        <>
-        <NavBar></NavBar>
+
+        
         <main className="main-content">
+            <NavBar></NavBar>
         <section className="form-card">
             <form className = "contact-form" action={handleFormChange} method="post">
                 <h1>Contact us for your queries:</h1>
@@ -61,7 +62,6 @@ const Contact = () => {
         </section>
         
         </main>
-        </>
     )
 }
 

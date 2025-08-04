@@ -6,7 +6,6 @@ import { faHome } from '@fortawesome/free-solid-svg-icons';
 
 const NotFoundPage = () => {
     return (
-        <>
         
         <main className="main-content">
             <NavBar/>
@@ -21,7 +20,6 @@ const NotFoundPage = () => {
                 Go Back Home</Link>
             </section>
         </main>
-        </>
     )
 }
 

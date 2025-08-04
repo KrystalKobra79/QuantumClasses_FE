@@ -4,7 +4,7 @@ import NavBar from '../NavBar/NavBar.jsx';
 
 const About_Page = () => {
     return (
-        <>
+
         <main className="main-container" id='about_main'>
         <NavBar></NavBar>
             <section className='about-container'>
@@ -62,8 +62,8 @@ const About_Page = () => {
 
                    </section>
 
-</main>
-        </>
+        </main>
+
     )
 }
 

@@ -2,10 +2,8 @@ import './Courses_Offered.scss';
 import NavBar from '../NavBar/NavBar.jsx';
 const Courses_Offered = () => {
     return (
-        <>
-        <NavBar></NavBar>
         <main className='main-container'>
-
+            <NavBar></NavBar>
             <h1>Courses Offered:</h1>
             <section className='course-card-container'>
 
@@ -57,8 +55,6 @@ const Courses_Offered = () => {
 
                    </section>
         </main>
-        
-        </>
     )
 }
 
