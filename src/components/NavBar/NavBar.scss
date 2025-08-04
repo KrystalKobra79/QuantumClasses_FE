@@ -348,6 +348,12 @@ video {
   //height: 5vh;
   //width: 10vh;
 }
+// NavBar icon highlight
+#navbar_main .link-icon .highlighted{
+  border: 0.35rem solid black;
+  background-color: burlywood;
+  color: black;
+}
 #navbar_main .right-0 {
   right: 0;
 }
@@ -634,6 +640,12 @@ video {
     padding-left: 24px;
     padding-right: 24px;
   }
+  // NavBar icon highlight
+#navbar_main .link-icon .highlighted{
+  border: 0.35rem solid black;
+  background-color: burlywood;
+  color: black;
+}
 }
 
 
@@ -647,6 +659,12 @@ video {
   #navbar_main .md\:hidden {
     display: none;
   }
+  // NavBar icon highlight
+#navbar_main .link-icon .highlighted{
+  border: 0.35rem solid black;
+  background-color: burlywood;
+  color: black;
+}
 }
 
 
@@ -655,4 +673,10 @@ video {
     padding-left: 32px;
     padding-right: 32px;
   }
+  // NavBar icon highlight
+#navbar_main .link-icon .highlighted{
+  border: 0.35rem solid black;
+  background-color: burlywood;
+  color: black;
+}
 }

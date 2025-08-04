@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faBookOpen,faHome, faInfoCircle,faUser } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
@@ -8,6 +8,11 @@ import './QuantumClasses.jpg'
 
 
 const NavBar = () => {
+	const [clicked, setClicked] = useState(false);
+
+	function handleClick(clicked){
+			setClicked(!clicked);
+	}
   return (
 <div id="navbar_main"> 
         	<div className="w-full bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
@@ -28,27 +33,27 @@ const NavBar = () => {
 	          <div  className="ml-10 flex items-baseline space-x-8">
 
 						<Link to={"/"} className="text-gray-900 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
-            <span className="material-symbols-outlined inline mr-3 text-base">
-              <FontAwesomeIcon className='link-icon' icon={faHome} ></FontAwesomeIcon>
+            <span className="material-symbols-outlined inline mr-3 text-base" onClick={handleClick}>
+              <FontAwesomeIcon className={`link-icon ${clicked? 'highlighted' : ''}`} icon={faHome} ></FontAwesomeIcon>
                 <label htmlFor="link-home" className="link-text-name">Home</label>
             </span>
 					</Link>
 
 					<Link to={"/courses_offered"} className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
                 <span className="material-symbols-outlined inline mr-3 text-base">
-                  <FontAwesomeIcon className='link-icon' icon={faBookOpen} ></FontAwesomeIcon>
+                  <FontAwesomeIcon className={`link-icon ${clicked? 'highlighted' : ''}`} icon={faBookOpen} ></FontAwesomeIcon>
                   <label htmlFor="link-home" className="link-text-name">Courses</label>
                 </span></Link>
 
 					<Link to={"/about_page"} className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
             <span className="material-symbols-outlined inline mr-3 text-base">
-              <FontAwesomeIcon className='link-icon' icon={faInfoCircle} ></FontAwesomeIcon>
+              <FontAwesomeIcon className={`link-icon ${clicked? 'highlighted' : ''}`} icon={faInfoCircle} ></FontAwesomeIcon>
                 <label htmlFor="link-home" className="link-text-name">About</label>
             </span>
 					</Link>
 					<Link to={"/contact"} className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
             <span className="material-symbols-outlined inline mr-3 text-base">
-              <FontAwesomeIcon className='link-icon' icon={faUser} ></FontAwesomeIcon>
+              <FontAwesomeIcon className={`link-icon ${clicked? 'highlighted' : ''}`} icon={faUser} ></FontAwesomeIcon>
                 <label htmlFor="link-home" className="link-text-name">Contact Us</label>
             </span>
 					</Link>
@@ -62,7 +67,7 @@ const NavBar = () => {
 	<div className="md:hidden z-10">
 	  <details className="relative inline-block">
 	    <summary  className="flex items-center justify-center w-10 h-10 rounded-md text-gray-500 hover:text-gray-900 hover:bg-gray-100 transition-all duration-200 cursor-pointer">
-	       <FontAwesomeIcon className='link-icon' icon={faBars} ></FontAwesomeIcon>
+	       <FontAwesomeIcon className={`link-icon ${clicked? 'highlighted' : ''}`} icon={faBars} ></FontAwesomeIcon>
 	    </summary>
 	    <div className="absolute right-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 z-50 max-h-[90vh] overflow-y-auto">
 	      <div className="px-4 py-3 border-b border-gray-200">
@@ -80,26 +85,26 @@ const NavBar = () => {
 
 					<Link to={"/"} className="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-100 transition-colors duration-200">
             <span className="material-symbols-outlined inline mr-3 text-base">
-              <FontAwesomeIcon className='link-icon' icon={faHome} ></FontAwesomeIcon>
+              <FontAwesomeIcon className={`link-icon ${clicked? 'highlighted' : ''}`} icon={faHome} ></FontAwesomeIcon>
                 <label htmlFor="link-home" className="link-text-name">Home</label>
             </span>
 					</Link>
 
 					<Link to={"/courses_offered"} className="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-100 transition-colors duration-200">
                 <span className="material-symbols-outlined inline mr-3 text-base">
-                  <FontAwesomeIcon className='link-icon' icon={faBookOpen} ></FontAwesomeIcon>
+                  <FontAwesomeIcon className={`link-icon ${clicked? 'highlighted' : ''}`} icon={faBookOpen} ></FontAwesomeIcon>
                   <label htmlFor="link-home" className="link-text-name">Courses</label>
                 </span></Link>
 
 					<Link to={"/about_page"} className="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-100 transition-colors duration-200">
             <span className="material-symbols-outlined inline mr-3 text-base">
-              <FontAwesomeIcon className='link-icon' icon={faInfoCircle} ></FontAwesomeIcon>
+              <FontAwesomeIcon className={`link-icon ${clicked? 'highlighted' : ''}`} icon={faInfoCircle} ></FontAwesomeIcon>
                 <label htmlFor="link-home" className="link-text-name">About</label>
             </span>
 					</Link>
 					<Link to={"/contact"} className="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-100 transition-colors duration-200">
             <span className="material-symbols-outlined inline mr-3 text-base">
-              <FontAwesomeIcon className='link-icon' icon={faUser} ></FontAwesomeIcon>
+              <FontAwesomeIcon className={`link-icon ${clicked? 'highlighted' : ''}`} icon={faUser} ></FontAwesomeIcon>
                 <label htmlFor="link-home" className="link-text-name">Contact Us</label>
             </span>
 					</Link>
